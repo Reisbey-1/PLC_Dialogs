@@ -1,0 +1,495 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "1 TYPELIB ""..\\..\\bin\\Dialogs.tlb""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,0
+ PRODUCTVERSION 1,0,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704b0"
+        BEGIN
+            VALUE "FileDescription", "Dialogs Module"
+            VALUE "FileVersion", "1, 0, 1, 0"
+            VALUE "InternalName", "Dialogs"
+            VALUE "LegalCopyright", "Copyright 2006"
+            VALUE "OriginalFilename", "Dialogs.DLL"
+            VALUE "ProductName", "Dialogs Module"
+            VALUE "ProductVersion", "1, 0, 1, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_SLAVE_IO28, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 332
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+        HORZGUIDE, 43
+    END
+
+    IDD_DIALOG_MD500_CONFIGURATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 472
+        VERTGUIDE, 130
+        VERTGUIDE, 140
+        VERTGUIDE, 226
+        VERTGUIDE, 236
+        VERTGUIDE, 303
+        VERTGUIDE, 312
+        VERTGUIDE, 405
+        VERTGUIDE, 440
+        VERTGUIDE, 462
+        VERTGUIDE, 472
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 252
+        HORZGUIDE, 24
+        HORZGUIDE, 44
+        HORZGUIDE, 59
+        HORZGUIDE, 80
+        HORZGUIDE, 139
+        HORZGUIDE, 233
+    END
+
+    IDD_DIALOG_ME100_CONFIGURATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 558
+        VERTGUIDE, 18
+        VERTGUIDE, 36
+        VERTGUIDE, 64
+        VERTGUIDE, 77
+        VERTGUIDE, 109
+        VERTGUIDE, 114
+        VERTGUIDE, 144
+        VERTGUIDE, 162
+        VERTGUIDE, 184
+        VERTGUIDE, 226
+        VERTGUIDE, 236
+        VERTGUIDE, 278
+        VERTGUIDE, 348
+        VERTGUIDE, 356
+        VERTGUIDE, 508
+        VERTGUIDE, 512
+        VERTGUIDE, 554
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 282
+        HORZGUIDE, 243
+        HORZGUIDE, 257
+        HORZGUIDE, 268
+    END
+
+    IDD_DIALOG_EMBEDDED_32, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 526
+        VERTGUIDE, 470
+        TOPMARGIN, 12
+        BOTTOMMARGIN, 312
+    END
+
+    IDD_DIALOG_LIST_ITEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_DIALOG_MDxx_MONITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 386
+        VERTGUIDE, 330
+        VERTGUIDE, 336
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_SLAVE_IO28 DIALOG 0, 0, 339, 202
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IO28 - I/O module"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,282,7,50,14
+    PUSHBUTTON      "iptal",IDCANCEL,282,24,50,14
+    RTEXT           "Slave Adress",IDC_STATIC,29,32,73,11
+    EDITTEXT        IDC_EDIT_ADDRES,115,28,102,15,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_MD500_CONFIGURATION DIALOGEX 0, 0, 479, 258
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Configuration "
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_SLAVE_TYPE,236,32,67,97,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SLAVE_ADDRESS,236,47,67,12,ES_AUTOHSCROLL
+    CONTROL         "Vcc - external",IDC_RADIO_VCC,"Button",BS_AUTORADIOBUTTON,236,69,55,11
+    CONTROL         "2.56 volt - internal",IDC_RADIO_RV256,"Button",BS_AUTORADIOBUTTON,312,69,69,11
+    RTEXT           "communication protocol :",IDC_STATIC_COMPRO,138,93,88,11
+    CONTROL         "Spi-500",IDC_RADIO_SPI500,"Button",BS_AUTORADIOBUTTON,236,93,55,11
+    CONTROL         "Spi-500-Ring",IDC_RADIO_SPI500_R,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,312,93,69,11
+    CONTROL         "Twi",IDC_RADIO_TWI,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,236,105,55,11
+    CONTROL         "Twi-Ring",IDC_RADIO_TWI_R,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,312,105,69,11
+    RTEXT           "slave offset :",IDC_STATIC_SLAVEOFFSET,168,131,58,8
+    COMBOBOX        IDC_COMBO_SLAVE_OFFSET,236,127,67,103,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BAUD,236,157,67,117,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_PARITY,236,172,67,84,CBS_DROPDOWN | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TAKT,236,187,67,109,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SPI_TAKT,236,201,67,85,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TWI_TAKT,236,216,67,85,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Defaults",IDC_BUTTON_DEFAULT,140,9,57,15,BS_BITMAP
+    PUSHBUTTON      "Update",IDC_BUTTON_UPDATE,226,9,57,15,BS_BITMAP
+    PUSHBUTTON      "Retrive",IDC_BUTTON_RETRIEVE,312,9,58,15,BS_BITMAP
+    DEFPUSHBUTTON   "OK",IDOK,405,238,57,14
+    PUSHBUTTON      "iptal",IDCANCEL,355,238,46,14
+    CONTROL         "Tree1",IDC_TREE_MD500,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,7,3,113,230,WS_EX_LEFTSCROLLBAR
+    RTEXT           "slave type :",IDC_STATIC_SLAVETYPE,184,33,42,11
+    RTEXT           "slave address :",IDC_STATIC_SLAVEADDRESS,168,48,58,11
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME | SS_CENTERIMAGE,130,3,342,230,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_STATIC_LINE1,"Static",SS_ETCHEDHORZ,226,61,236,1
+    RTEXT           "reference voltage :",IDC_STATIC_REFVOL,148,69,78,11
+    CONTROL         "",IDC_STATIC_LINE2,"Static",SS_ETCHEDHORZ,226,87,236,1
+    CONTROL         "",IDC_STATIC_LINE3,"Static",SS_ETCHEDHORZ,226,119,236,1
+    RTEXT           "baud :",IDC_STATIC_BAUD,168,161,58,8
+    RTEXT           "parity :",IDC_STATIC_PARITY,168,177,58,8
+    RTEXT           "frequency :",IDC_STATIC_TAKT,168,191,58,8
+    RTEXT           "table offset :  ",IDC_STATIC_TABLEOFFSET,184,146,42,8
+    EDITTEXT        IDC_EDIT_TABLE_OFFSET,236,142,67,12,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           " spi frequency  :",IDC_STATIC_SPI_TAKT,168,205,58,8
+    RTEXT           "twi frequency :",IDC_STATIC_TWI_TAKT,168,216,58,8
+    LTEXT           "slave address  in spi communication mode",IDC_STATIC_SPI_COMMENT,312,131,150,8
+    LTEXT           "slave address  in twi communication mode",IDC_STATIC_TWI_COMMENT,312,51,150,8
+    RTEXT           "processor :",IDC_STATIC_PROCESSOR,25,101,37,8,NOT WS_VISIBLE
+    RTEXT           "module :",IDC_STATIC_MODULE,25,115,37,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_PROCESSOR,68,102,33,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    EDITTEXT        IDC_EDIT_MODULE,65,116,39,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    RTEXT           "frequency :",IDC_STATIC_TAKT_CPU,25,129,37,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_TAKT_CPU,65,130,39,12,ES_AUTOHSCROLL | NOT WS_VISIBLE | WS_DISABLED
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,312,155,150,72
+    CONTROL         "",IDC_STATIC_LINE4,"Static",SS_ETCHEDHORZ,140,28,322,1
+    PUSHBUTTON      "Reset",IDC_BUTTON_RESET,405,9,57,15,BS_BITMAP
+END
+
+IDD_DIALOG_ME100_CONFIGURATION DIALOGEX 0, 0, 562, 287
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,512,268,42,14
+    PUSHBUTTON      "iptal",IDCANCEL,464,268,44,14
+    CONTROL         "Vcc - external",IDC_RADIO_VCC,"Button",BS_AUTORADIOBUTTON,339,260,55,11
+    CONTROL         "2.56 volt - internal",IDC_RADIO_RV256,"Button",BS_AUTORADIOBUTTON,339,271,69,11
+    COMBOBOX        IDC_COMBO_PARITY,77,128,85,84,CBS_DROPDOWN | CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TAKT,77,46,85,109,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SPI_TAKT,95,177,67,85,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TWI_TAKT,95,192,67,85,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Defaults",IDC_BUTTON_DEFAULT,99,243,21,14,BS_BITMAP
+    PUSHBUTTON      "Update",IDC_BUTTON_UPDATE,78,243,21,14,BS_BITMAP
+    PUSHBUTTON      "Retrive",IDC_BUTTON_RETRIEVE,57,243,21,14,BS_BITMAP
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME | SS_CENTERIMAGE,7,10,164,258,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_STATIC_LINE1,"Static",SS_ETCHEDHORZ,18,213,142,1
+    RTEXT           "reference voltage :",IDC_STATIC_REFVOL,267,260,62,11
+    CONTROL         "",IDC_STATIC_LINE2,"Static",SS_ETCHEDHORZ,20,219,142,1
+    RTEXT           "prescaler :",IDC_STATIC_PRSC,64,115,45,8
+    RTEXT           "parity :",IDC_STATIC_PARITY,7,131,58,8
+    RTEXT           "frequency :",IDC_STATIC_TAKT,13,50,51,8
+    RTEXT           "table offset :  ",IDC_STATIC_TABLEOFFSET,28,225,42,8
+    EDITTEXT        IDC_EDIT_TABLE_OFFSET,78,220,67,12,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           " spi frequency  :",IDC_STATIC_SPI_TAKT,7,181,57,8
+    RTEXT           "twi frequency :",IDC_STATIC_TWI_TAKT,7,195,57,8
+    RTEXT           "processor :",IDC_STATIC_PROCESSOR,27,20,37,8
+    RTEXT           "module :",IDC_STATIC_MODULE,27,34,37,8
+    EDITTEXT        IDC_EDIT_PROCESSOR,77,16,85,12,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_MODULE,77,30,85,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "Reset",IDC_BUTTON_RESET,36,243,21,14,BS_BITMAP
+    EDITTEXT        IDC_EDIT_BAUD,77,63,85,12,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "List1",IDC_LIST_EWORD,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | NOT WS_VISIBLE | WS_BORDER | WS_TABSTOP,184,15,324,204
+    CONTROL         "List2",IDC_LIST_EBYTE,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,184,15,324,204
+    PUSHBUTTON      "><",IDC_BUTTON_EBYTE_UPDATE,512,18,42,12
+    PUSHBUTTON      "><",IDC_BUTTON_EWORD_UPDATE,512,147,42,13
+    PUSHBUTTON      "--->",IDC_BUTTON_EBYTE_READ,512,35,42,12
+    PUSHBUTTON      "-->>",IDC_BUTTON_EBYTE_READ_BUTCH,512,52,42,12,WS_DISABLED
+    PUSHBUTTON      "--->",IDC_BUTTON_EWORD_READ,512,165,42,12
+    PUSHBUTTON      "-->>",IDC_BUTTON_EWORD_READ_BUTCH,512,182,42,12
+    CONTROL         "",IDC_STATIC_LINE3,"Static",SS_ETCHEDHORZ,19,161,143,1
+    PUSHBUTTON      "Defaults",IDC_BUTTON_HALT,120,243,21,14,BS_BITMAP
+    PUSHBUTTON      "Defaults",IDC_BUTTON_CONTINUE,141,243,21,14,BS_BITMAP
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME | SS_CENTERIMAGE,177,4,381,258,WS_EX_TRANSPARENT
+    PUSHBUTTON      "SYMBOL",IDC_BUTTON_BRS,512,243,42,14
+    EDITTEXT        IDC_EDIT_BRS,278,243,230,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "words",IDC_RADIO_WORDS,"Button",BS_AUTORADIOBUTTON,184,225,42,12
+    CONTROL         "bytes",IDC_RADIO_BYTES,"Button",BS_AUTORADIOBUTTON,236,226,42,12
+    PUSHBUTTON      "EEPROM",IDC_BUTTON_BRS_EEPROM_HEX,512,223,42,14
+    EDITTEXT        IDC_EDIT_BRS_EEPROM_HEX,278,223,230,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "",IDC_STATIC_LINE4,"Static",SS_ETCHEDHORZ,20,170,142,1
+    EDITTEXT        IDC_EDIT_TICK,114,81,48,12,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "tick count :",IDC_STATIC_TICK,63,83,46,8
+    COMBOBOX        IDC_COMBO_PRSC,114,111,48,109,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "baud :",IDC_STATIC_BAUD,7,65,58,8
+    EDITTEXT        IDC_EDIT_PULSE,114,96,48,12,ES_AUTOHSCROLL | WS_DISABLED
+    RTEXT           "pulse (PLSR) :",IDC_STATIC_PLSC,51,99,58,8
+END
+
+IDD_DIALOG_EMBEDDED_32 DIALOG 0, 0, 533, 319
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Embedded PLC Kanal Tanýmlarý"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,470,12,56,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,470,24,56,14
+    CONTROL         IDC_RADIO_SPI500,IDC_STATIC,"Static",SS_BITMAP,7,12,451,300
+    COMBOBOX        IDC_COMBO_PINS,470,152,56,324,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_MODES,470,128,56,46,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Digital Giris",IDC_RADIO_DIGITAL_IN,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,470,169,56,11
+    CONTROL         "Digital Cikis",IDC_RADIO_DIGITAL_OUT,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,470,182,56,13
+    CONTROL         "Analog Giris",IDC_RADIO_ANALOG_IN,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,470,196,56,9
+    CONTROL         "Analog Cikis",IDC_RADIO_ANALOG_OUT,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,470,209,56,9
+    LTEXT           "Mod",IDC_STATIC,470,120,39,8
+    LTEXT           "Pin",IDC_STATIC,470,143,56,8
+    EDITTEXT        IDC_EDIT_REGISTER,470,238,56,14,ES_AUTOHSCROLL
+    LTEXT           "Register",IDC_STATIC,470,228,56,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,470,115,56,1
+    PUSHBUTTON      "Konfig. Ac",IDC_BUTTON_OPEN,470,55,56,17
+    PUSHBUTTON      "Konfig. Sakla",IDC_BUTTON_SAVE,470,74,56,17
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,470,258,56,1
+END
+
+IDD_DIALOG_LIST_ITEM DIALOG 0, 0, 186, 54
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Eeprom"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,129,24,50,14
+    EDITTEXT        IDC_EDIT_ITEM_VALUE_BYTE,7,26,101,12,ES_AUTOHSCROLL
+    LTEXT           "Value :",IDC_STATIC,7,7,86,11
+END
+
+IDD_DIALOG_MDxx_MONITOR DIALOGEX 0, 0, 393, 222
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Monitor"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,336,7,50,14
+    PUSHBUTTON      "iptal",IDCANCEL,336,24,50,14
+    CONTROL         "List1",IDC_LIST_RAM_BILD,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,282,178
+    EDITTEXT        IDC_EDIT_SYMBOL_FILE,7,201,323,14,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      ">>>",IDC_BUTTON_BROWSE,336,200,50,15
+    PUSHBUTTON      "Start",IDC_BUTTON_START,336,122,50,15
+    PUSHBUTTON      "Stop",IDC_BUTTON_STOP,336,144,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_IO28                REGISTRY                "IO28.rgs"
+
+IDR_MD500               REGISTRY                "Md500.rgs"
+
+IDR_MD100               REGISTRY                "Md100.rgs"
+
+IDR_EMBEDDEDCONFIGURATOR REGISTRY                "EmbeddedConfigurator.rgs"
+
+IDR_MDXXMONITOR         REGISTRY                "MdxxMonitor.rgs"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_MD500        BITMAP                  "bitmap2.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_EMBEDDED_32 DLGINIT
+BEGIN
+    IDC_COMBO_PINS, 0x403, 4, 0
+0x4250, 0x0030, 
+    IDC_COMBO_PINS, 0x403, 4, 0
+0x4250, 0x0031, 
+    IDC_COMBO_PINS, 0x403, 4, 0
+0x4250, 0x0032, 
+    IDC_COMBO_PINS, 0x403, 4, 0
+0x4250, 0x0033, 
+    IDC_COMBO_PINS, 0x403, 4, 0
+0x4250, 0x0034, 
+    IDC_COMBO_PINS, 0x403, 4, 0
+0x4250, 0x0035, 
+    IDC_COMBO_PINS, 0x403, 4, 0
+0x4250, 0x0036, 
+    IDC_COMBO_PINS, 0x403, 4, 0
+0x4250, 0x0037, 
+    IDC_COMBO_PINS, 0x403, 4, 0
+0x4450, 0x0032, 
+    IDC_COMBO_PINS, 0x403, 4, 0
+0x4450, 0x0033, 
+    IDC_COMBO_PINS, 0x403, 4, 0
+0x4450, 0x0034, 
+    IDC_COMBO_PINS, 0x403, 4, 0
+0x4450, 0x0035, 
+    IDC_COMBO_PINS, 0x403, 4, 0
+0x4450, 0x0036, 
+    IDC_COMBO_PINS, 0x403, 4, 0
+0x4450, 0x0037, 
+    IDC_COMBO_MODES, 0x403, 6, 0
+0x4c41, 0x4e4f, 0x0045, 
+    IDC_COMBO_MODES, 0x403, 7, 0
+0x414d, 0x5453, 0x5245, "\000" 
+    IDC_COMBO_MODES, 0x403, 6, 0
+0x4c53, 0x5641, 0x0045, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_ME100_CONFIGURATION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_MDxx_MONITOR AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_PROJNAME            "Dialogs"
+    IDS_STRING_TAG_ALLFILES "all files"
+    IDS_ME50_VM08           "[Module : ME50] [Virtual Machine : VM08]"
+    IDS_ME100_VM16          "[Module : ME100] [Virtual Machine : VM16]"
+    IDS_ME100_VM32          "[Module : ME100] [Virtual Machine : VM32]"
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United Kingdom) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_EMBEDDED_32  BITMAP                  "bitmap_e.bmp"
+
+#endif    // English (United Kingdom) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

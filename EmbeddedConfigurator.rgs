@@ -1,0 +1,26 @@
+HKCR
+{
+	Dialogs.EmbeddedConfigurator.1 = s 'EmbeddedConfigurator Class'
+	{
+		CLSID = s '{83D8A77D-979E-4CAA-A279-51BD81299E8C}'
+	}
+	Dialogs.EmbeddedConfigurator = s 'EmbeddedConfigurator Class'
+	{
+		CLSID = s '{83D8A77D-979E-4CAA-A279-51BD81299E8C}'
+		CurVer = s 'Dialogs.EmbeddedConfigurator.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {83D8A77D-979E-4CAA-A279-51BD81299E8C} = s 'EmbeddedConfigurator Class'
+		{
+			ProgID = s 'Dialogs.EmbeddedConfigurator.1'
+			VersionIndependentProgID = s 'Dialogs.EmbeddedConfigurator'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{CDB1AD1C-48B1-487D-AAD4-CA7E886D2BF2}'
+		}
+	}
+}

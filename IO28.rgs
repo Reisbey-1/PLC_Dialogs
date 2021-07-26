@@ -1,0 +1,26 @@
+HKCR
+{
+	Dialogs.IO28.1 = s 'IO28 Class'
+	{
+		CLSID = s '{7CBD01EC-E25C-4232-B69D-3BD9A7EFE869}'
+	}
+	Dialogs.IO28 = s 'IO28 Class'
+	{
+		CLSID = s '{7CBD01EC-E25C-4232-B69D-3BD9A7EFE869}'
+		CurVer = s 'Dialogs.IO28.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {7CBD01EC-E25C-4232-B69D-3BD9A7EFE869} = s 'IO28 Class'
+		{
+			ProgID = s 'Dialogs.IO28.1'
+			VersionIndependentProgID = s 'Dialogs.IO28'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{CDB1AD1C-48B1-487D-AAD4-CA7E886D2BF2}'
+		}
+	}
+}

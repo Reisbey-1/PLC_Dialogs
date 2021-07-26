@@ -1,0 +1,26 @@
+HKCR
+{
+	Dialogs.Md500.1 = s 'Md500 Class'
+	{
+		CLSID = s '{725B09D1-CF94-477F-9240-196D8E705042}'
+	}
+	Dialogs.Md500 = s 'Md500 Class'
+	{
+		CLSID = s '{725B09D1-CF94-477F-9240-196D8E705042}'
+		CurVer = s 'Dialogs.Md500.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {725B09D1-CF94-477F-9240-196D8E705042} = s 'Md500 Class'
+		{
+			ProgID = s 'Dialogs.Md500.1'
+			VersionIndependentProgID = s 'Dialogs.Md500'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{CDB1AD1C-48B1-487D-AAD4-CA7E886D2BF2}'
+		}
+	}
+}

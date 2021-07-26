@@ -1,0 +1,9 @@
+; Dialogs.def : Deklariert die Parameter für das Modul.
+
+LIBRARY      "Dialogs.DLL"
+
+EXPORTS
+	DllCanUnloadNow      PRIVATE
+	DllGetClassObject    PRIVATE
+	DllRegisterServer    PRIVATE
+	DllUnregisterServer	 PRIVATE

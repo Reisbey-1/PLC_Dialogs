@@ -1,0 +1,26 @@
+HKCR
+{
+	Dialogs.MdxxMonitor.1 = s 'MdxxMonitor Class'
+	{
+		CLSID = s '{F2785D32-70A5-450C-8D05-59712646C7D4}'
+	}
+	Dialogs.MdxxMonitor = s 'MdxxMonitor Class'
+	{
+		CLSID = s '{F2785D32-70A5-450C-8D05-59712646C7D4}'
+		CurVer = s 'Dialogs.MdxxMonitor.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {F2785D32-70A5-450C-8D05-59712646C7D4} = s 'MdxxMonitor Class'
+		{
+			ProgID = s 'Dialogs.MdxxMonitor.1'
+			VersionIndependentProgID = s 'Dialogs.MdxxMonitor'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{CDB1AD1C-48B1-487D-AAD4-CA7E886D2BF2}'
+		}
+	}
+}

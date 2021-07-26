@@ -1,0 +1,120 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by Dialogs.rc
+//
+#define IDS_PROJNAME                    100
+#define IDS_STRING_TAG_ALLFILES         101
+#define IDR_IO28                        102
+#define IDS_SYSTEM_IS_NOT_IN_HALT_MODUS 102
+#define IDR_MD500                       103
+#define IDS_ME50_VM08                   103
+#define IDR_MD100                       104
+#define IDS_ME100_VM16                  104
+#define IDR_EMBEDDEDCONFIGURATOR        105
+#define IDS_ME100_VM32                  105
+#define IDR_MDXXMONITOR                 106
+#define IDD_DIALOG_SLAVE_IO28           201
+#define IDC_EDIT_ADDRES                 201
+#define IDD_DIALOG_MD500_CONFIGURATION  202
+#define IDC_TREE_MD500                  202
+#define IDB_BITMAP1                     203
+#define IDB_BITMAP_MD500                204
+#define IDC_EDIT_SLAVE_ADDRESS          204
+#define IDC_BUTTON_RETRIEVE             205
+#define IDC_EDIT_TABLE_OFFSET           206
+#define IDC_RADIO_VCC                   210
+#define IDC_RADIO_RV256                 211
+#define IDD_DIALOG_ME100_CONFIGURATION  211
+#define IDC_RADIO_SPI500                212
+#define IDB_BITMAP_EMBEDDED_32          212
+#define IDD_DIALOG_EMBEDDED_32          213
+#define IDD_DIALOG_LIST_ITEM            215
+#define IDC_RADIO_SPI500_R              216
+#define IDD_DIALOG_MDxx_MONITOR         216
+#define IDC_RADIO_TWI                   217
+#define IDC_RADIO_TWI_R                 220
+#define IDC_BUTTON_UPDATE               221
+#define IDC_COMBO_SLAVE_OFFSET          222
+#define IDC_COMBO_BAUD                  223
+#define IDC_COMBO_PARITY                224
+#define IDC_COMBO_TAKT                  225
+#define IDC_COMBO_SLAVE_TYPE            226
+#define IDC_COMBO_PRSC                  226
+#define IDC_BUTTON_DEFAULT              227
+#define IDC_COMBO_SPI_TAKT              228
+#define IDC_COMBO_TWI_TAKT              229
+#define IDC_BUTTON_RESET                230
+#define IDC_STATIC_SLAVETYPE            231
+#define IDC_BUTTON_HALT                 231
+#define IDC_STATIC_SLAVEADDRESS         232
+#define IDC_BUTTON_CONTINUE             232
+#define IDC_STATIC_REFVOL               233
+#define IDC_STATIC_COMPRO               234
+#define IDC_STATIC_SLAVEOFFSET          235
+#define IDC_STATIC_TABLEOFFSET          236
+#define IDC_STATIC_BAUD                 237
+#define IDC_STATIC_PARITY               238
+#define IDC_STATIC_TAKT                 239
+#define IDC_STATIC_SPI_TAKT             240
+#define IDC_STATIC_TWI_TAKT             241
+#define IDC_STATIC_TWI_COMMENT          242
+#define IDC_STATIC_TICK                 242
+#define IDC_STATIC_SPI_COMMENT          243
+#define IDC_STATIC_TAKT2                243
+#define IDC_STATIC_PROCESSOR            244
+#define IDC_STATIC_MODULE               245
+#define IDC_STATIC_PLSC                 246
+#define IDC_EDIT_PROCESSOR              247
+#define IDC_EDIT_MODULE                 248
+#define IDC_STATIC_TAKT_CPU             249
+#define IDC_EDIT_TAKT_CPU               250
+#define IDC_STATIC_LINE1                251
+#define IDC_STATIC_LINE2                252
+#define IDC_STATIC_LINE3                253
+#define IDC_STATIC_LINE4                254
+#define IDC_EDIT_BAUD                   255
+#define IDC_COMBO_PINS                  255
+#define IDC_COMBO_MODES                 256
+#define IDC_EDIT_TICK                   256
+#define IDC_RADIO_DIGITAL_IN            257
+#define IDC_EDIT_PULSE                  257
+#define IDC_RADIO_DIGITAL_OUT           258
+#define IDC_RADIO_ANALOG_IN             259
+#define IDC_RADIO_ANALOG_OUT            260
+#define IDC_EDIT_REGISTER               261
+#define IDC_BUTTON_OPEN                 262
+#define IDC_BUTTON_SAVE                 263
+#define IDC_LIST_EWORD                  263
+#define IDC_LIST_EBYTE                  264
+#define IDC_EDIT_EBYTE                  265
+#define IDC_BUTTON_EBYTE_UPDATE         266
+#define IDC_EDIT_EWORD                  267
+#define IDC_EDIT_ITEM_VALUE_BYTE        267
+#define IDC_BUTTON_EWORD_UPDATE         268
+#define IDC_LIST_RAM_BILD               268
+#define IDC_BUTTON_EBYTE_READ           269
+#define IDC_EDIT_SYMBOL_FILE            269
+#define IDC_BUTTON_EBYTE_READ_BUTCH     270
+#define IDC_BUTTON_BROWSE               270
+#define IDC_BUTTON_EWORD_READ           271
+#define IDC_BUTTON_EWORD_READ_BUTCH     272
+#define IDC_BUTTON_START                272
+#define IDC_BUTTON_STOP                 273
+#define IDC_BUTTON_BRS                  275
+#define IDC_EDIT_BRS                    276
+#define IDC_RADIO_WORDS                 277
+#define IDC_RADIO_BYTES                 278
+#define IDC_BUTTON_BRS_EEPROM_HEX       279
+#define IDC_EDIT_BRS_EEPROM_HEX         280
+#define IDC_STATIC_PRSC                 281
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        221
+#define _APS_NEXT_COMMAND_VALUE         32768
+#define _APS_NEXT_CONTROL_VALUE         282
+#define _APS_NEXT_SYMED_VALUE           107
+#endif
+#endif

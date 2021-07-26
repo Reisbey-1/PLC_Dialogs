@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Quellcodedateien">
+      <UniqueIdentifier>{734f8a36-32a6-477c-9ddf-5dc8dec5d232}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header-Dateien">
+      <UniqueIdentifier>{7f8d1906-91f3-4ee1-bfcd-2b203082786f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Ressourcendateien">
+      <UniqueIdentifier>{9dd6ed34-4df9-4c1d-a2aa-4fdf456dbc1e}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DialogItemValue.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialogs.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="EmbeddedConfigurator.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="EmbeddedConfigurator_dlg.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="IO28.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="IO28_dlg.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Md100.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Md100_dlg.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="MdxxMonitor.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="MdxxMonitor_dlg.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="PageMD100.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="PageMD500.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Md500.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Md500_dlg.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EmbeddedConfigurator.rgs">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="IO28.rgs">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="Md100.rgs">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="Md500.rgs">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+    <None Include="MdxxMonitor.rgs">
+      <Filter>Ressourcendateien</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="Dialogs.idl">
+      <Filter>Quellcodedateien</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Dialogs.rc">
+      <Filter>Quellcodedateien</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DialogItemValue.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="EmbeddedConfigurator.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="EmbeddedConfigurator_dlg.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="IO28.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="IO28_dlg.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Md100.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Md100_dlg.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="MdxxMonitor.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="MdxxMonitor_dlg.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="PageMD100.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="PageMD500.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Md500.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Md500_dlg.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bitmap1.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="bitmap2.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="bitmap_e.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="bmp00001.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="bmp00002.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="continue.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="default.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="idc_butt.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="retrive.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+    <Image Include="update.bmp">
+      <Filter>Ressourcendateien</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

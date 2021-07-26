@@ -1,0 +1,126 @@
+// Dialogs.idl : IDL-Quellcode für Dialogs.dll
+//
+
+// Diese Datei wird mit dem MIDL-Tool bearbeitet,
+// um den Quellcode für die Typbibliothek (Dialogs.tlb)und die Abruffunktionen zu erzeugen.
+
+import "oaidl.idl";
+import "ocidl.idl";
+	[
+		object,
+		uuid(28FB79DE-362E-49EE-AB20-64772D9500FC),
+		dual,
+		helpstring("IIO28-Schnittstelle"),
+		pointer_default(unique)
+	]
+	interface IIO28 : IDispatch
+	{
+		[id(1), helpstring("Methode Execute")] HRESULT Execute();
+	};
+	[
+		object,
+		uuid(AEC973F0-7978-4660-832D-73B9969D14F9),
+		dual,
+		helpstring("IMd500-Schnittstelle"),
+		pointer_default(unique)
+	]
+	interface IMd500 : IDispatch
+	{
+		[id(1), helpstring("Methode Execute")] HRESULT Execute([in] int hParent, [in] int nProcessor);
+		[propget, id(2), helpstring("Eigenschaft SerPort")] HRESULT SerPort([out, retval] IDispatch* *pVal);
+		[propput, id(2), helpstring("Eigenschaft SerPort")] HRESULT SerPort([in] IDispatch* * newVal);
+		[propput, id(3), helpstring("Eigenschaft Sink")] HRESULT Sink([in] IUnknown** newVal);
+		[propput, id(4), helpstring("Eigenschaft SinkBuffer")] HRESULT SinkBuffer([in] BYTE** newVal);
+	};
+	[
+		object,
+		uuid(F772002B-4A70-41DF-9EC5-183DB8F491E8),
+		dual,
+		helpstring("IMd100-Schnittstelle"),
+		pointer_default(unique)
+	]
+	interface IMd100 : IDispatch
+	{
+		[id(1), helpstring("Methode Execute")] HRESULT Execute([in] int hParent, [in] int nProcessor);
+		[propget, id(2), helpstring("Eigenschaft SerPort")] HRESULT SerPort([out, retval] IDispatch* *pVal);
+		[propput, id(2), helpstring("Eigenschaft SerPort")] HRESULT SerPort([in] IDispatch** newVal);
+		[propput, id(3), helpstring("Eigenschaft Sink")] HRESULT Sink([in] IDispatch** newVal);
+		[propput, id(4), helpstring("Eigenschaft SinkBuffer")] HRESULT SinkBuffer([in] BYTE ** newVal);
+	};
+	[
+		object,
+		uuid(EDDF6935-E425-48BE-9457-9B587A46AAFC),
+		dual,
+		helpstring("IEmbeddedConfigurator-Schnittstelle"),
+		pointer_default(unique)
+	]
+	interface IEmbeddedConfigurator : IDispatch
+	{
+		[id(1), helpstring("Methode Execute")] HRESULT Execute();
+	};
+	[
+		object,
+		uuid(5E89509E-1F6C-4B00-8BD5-94E685F9E3C4),
+		dual,
+		helpstring("IMdxxMonitor-Schnittstelle"),
+		pointer_default(unique)
+	]
+	interface IMdxxMonitor : IDispatch
+	{
+		[id(1), helpstring("Methode Execute")] HRESULT Execute([in] int hParent,[in] int nVm);
+		[propput, id(2), helpstring("Eigenschaft SerPort")] HRESULT SerPort([in] IDispatch** newVal);
+		[propput, id(3), helpstring("Eigenschaft Sink")] HRESULT Sink([in] IDispatch** newVal);
+		[propput, id(4), helpstring("Eigenschaft Fabric")] HRESULT Fabric([in] IDispatch** newVal);
+	};
+
+[
+	uuid(CDB1AD1C-48B1-487D-AAD4-CA7E886D2BF2),
+	version(1.0),
+	helpstring("Dialogs 1.0 Typbibliothek")
+]
+library DIALOGSLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(7CBD01EC-E25C-4232-B69D-3BD9A7EFE869),
+		helpstring("IO28 Class")
+	]
+	coclass IO28
+	{
+		[default] interface IIO28;
+	};
+	[
+		uuid(725B09D1-CF94-477F-9240-196D8E705042),
+		helpstring("Md500 Class")
+	]
+	coclass Md500
+	{
+		[default] interface IMd500;
+	};
+	[
+		uuid(52285FE7-29C1-4B71-93A8-34A91FC655AC),
+		helpstring("Md100 Class")
+	]
+	coclass Md100
+	{
+		[default] interface IMd100;
+	};
+	[
+		uuid(83D8A77D-979E-4CAA-A279-51BD81299E8C),
+		helpstring("EmbeddedConfigurator Class")
+	]
+	coclass EmbeddedConfigurator
+	{
+		[default] interface IEmbeddedConfigurator;
+	};
+	[
+		uuid(F2785D32-70A5-450C-8D05-59712646C7D4),
+		helpstring("MdxxMonitor Class")
+	]
+	coclass MdxxMonitor
+	{
+		[default] interface IMdxxMonitor;
+	};
+};
